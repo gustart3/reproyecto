@@ -9,18 +9,154 @@ header{
     font-family: 'Bagel Fat One', cursive;
     display: flex;
     justify-content: center;
-    margin-bottom: 0; 
+    align-items: center;
+    margin-bottom: -20%;
 }
-nav{
-    display: flex;
-    justify-content: center;
-    margin: 0 30% 0 30%;  
-    background-color: lightblue;
-    flex-direction: row;
-    
+body{ 
+  font-family: 'Kaushan Script', cursive;
+  font-size: 16px;
+  line-height: 1;
+
+
 }
+.container{
+height: 10px;
+height: 50vw;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+perspective: 500px;
+}
+
+.gus1{
+  width: 100px;
+  height:100px;
+  background: url(/img/yo.jpg);
+  border-radius: 50px;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 10px;
+  filter: drop-shadow(0px 7px 21px rgb(30, 166, 211));
+  animation: rotar 3s linear infinite;
+  margin-top: 0;
+  margin-bottom: 0px;
+  left: 5px;
+
+}
+
+.gus1:hover{
+  cursor: pointer;
+}
+
+@keyframes rotar{
+  from{
+    transform: rotateY(360deg); 
+  }
+   to{
+    transform: rotateY('-180deg');
+   }
+}
+
+.content-all{
+ display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 50px;
+  perspective: 1000px;
+  position: relative;
+  
+}
+.content-all .content{
+  flex: content;
+  padding: 200px;
+  
+
+}
+.content-carrousel{
+  width: 100%;
+  position: absolute;
+  animation: rotacion 20s infinite linear;
+  transform-style: preserve-3d;
+  box-shadow: 0px 0px 200px 0px black;
+} 
+.content-carrousel:hover{
+  animation-play-state: paused;
+  transition: all 300ms;
+  cursor: pointer;
+
+ }
+ .content-carrousel figure{
+  width: 50%;
+  height:50%;
+  margin-left: 150px;
+  margin-right: 250px;
+  position: absolute; 
+ }
+
+
+
+ .content-carrousel figure:nth-child(1){transform:rotateY(36deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(2){transform:rotateY(72deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(3){transform:rotateY(108deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(4){transform:rotateY(144deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(5){transform:rotateY(180deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(6){transform:rotateY(216deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(7){transform:rotateY(252deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(8){transform:rotateY(288deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(9){transform:rotateY(324deg)
+  translateZ(300px);}
+ .content-carrousel figure:nth-child(10){transform:rotateY(360deg)
+  translateZ(300px);}
+ 
+.content-carrousel img{
+  border-radius: 15px;
+  width: 165%;
+  transition: all 300ms;
+  box-shadow: 0px 0px 20px 0px black;
+} 
+.content-carrousel img:hover{
+ transform: scale(1.2);
+ box-shadow: 0px 0px 00px 0px black;
+ transition: all 300ms;
+} 
+@keyframes rotacion{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+
+
+
+
+.tabset{
+  display:block;
+margin: 0 5% 0 5%;
+
+}
+
+.tab-panel{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
 h1{
-    padding: 20px 0 0 0;
+   margin-left: 30%;
 }
 
 
@@ -28,55 +164,34 @@ h1{
     display: flex;
 }
 
-
-ul.lista01{
-    display: flex;
-    justify-content: space-between;
-    
-
-}
-
-ul.horizontalList {
-    list-style: none;
-    
-  }
-  
-  ul.lista01 li {
-    display: flex;
-    padding: 0 5px 0 5px;
-    font-size: 13px;
-    font-family: 'Kaushan Script', cursive;
-  }
-  
-  ul.lista01 li a:link {
-    color: #9665b3;
-    text-decoration: none;
-    padding: 5px;
-    border: 2px solid #000;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  
-  ul.lista01 li a:visited {
-    color: #000000;}
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
+/*#extras{
+  padding: 0;
+  margin: 0;
+ 
+}*/
 
 
 img.logo{
     width: 100px;
     border-radius: 50px;
     margin: 2%;
-    padding: 10px;
+    padding: 5px;
+    border: solid black;
 }
 img.perfil{
     border-radius: 100px;
     width: 200px;
+    border: solid rgb(77, 154, 231);
+    padding: 10px;
+    transition: all 600ms;
+    position: relative;
+}
+
+img.perfil:hover{
+  transform: scale(1.15);
+
 }
 section{
-    font-family: 'Loved by the King', cursive;
     font-size: 28px;
     display: flex;
     justify-content: center;
@@ -84,34 +199,39 @@ section{
     align-items: center;
     margin: 1% 10% 0 10% ;
 }
+.banderita{
+  max-width: 100%;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  
+} 
+ 
 
 p{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 20px;  
+    font-size: 20px; 
+    text-align: justify; 
 }
 
 footer{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding: 30px;
+    margin-top: 40%;
 }
 button{
-    background-color: #9665b3;
-    border: solid #000000;
+    background-color: #a5cef3;
+    border: solid #564fb1;
     border-radius: 15px;
     padding: 8px;
     font-family: 'Kaushan Script', cursive;
     font-size: medium;
-    margin: 10px;
-    
+    margin: 10px;   
 }
-
-ul.lista02{
-   
-    display: inline-flex;
-    padding: 5px;
-    
+.cv{
+  text-align: center;
 }
 
 .tab-content {
@@ -128,22 +248,21 @@ ul.lista02{
     --tabs-border-color: #ABCDEF;
     --tabs-border-size: 3px;
     --tabs-text-color: #000000;
-    --tabs-dark-color: #345678;
-    --tabs-lite-color: #b5cce2;
+    --tabs-dark-color: #ac6099;
+    --tabs-lite-color: #a5cef3;
     --tabs-width: 120px;
     --tabs-height: 40px;
+
   }
-  body {
-    font-family: sans-serif;
-    line-height: 1.2;
-  }
+ 
   h2, p {
     margin: 0;
   } 
   a {
     color: inherit;
     text-decoration: none;
-  } 
+  }   
+
   .tabs * {
     box-sizing: border-box;
   }
@@ -171,7 +290,6 @@ ul.lista02{
   .tabs { 
     padding: 10px;
     color: var(--tabs-text-color);
-    font-family: 'Loved by the King', cursive;
     font-size: 24PX;
 
   }
@@ -198,23 +316,88 @@ ul.lista02{
     background-color: var(--tabs-dark-color); 
     z-index: 0; 
   }
-  .gif{
-    width: 50px;
-    margin-right: 50px;
-  }
-.contacto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0px;
+
+#contactos{
+  font-size: medium; 
+
+}
+li.lista1::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/mail.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+.lista3:hover{
+  transform: scale(1.2);
+  transition: all 300ms;
+  cursor: pointer;
 }
 
+li.lista2::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/linkedin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+li.lista3::before{
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/github.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+/*
 img.pequeña{
-    width: 200px;
+    width: 10%x;
     margin: 5%;
+    border-radius: 15px;
 }
 img.mediana{
     width: 400px;
+    border-radius: 15px;
+    margin: 5%;
+}*/
+#fotos{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 150%;
+  grid-auto-flow: row;
+  justify-content: center;
+  padding: 0 10% 0 10%;
+}
+
+#fotos img{
+  width: 150%;
+  transition: all 600ms;
+  position: relative;
+  border-radius: 20px;
+  padding: 0 30% 0 30%;
+  
+}
+
+#fotos img:hover{
+  transform: scale(160%);
+  padding: 0;
+ 
+}
+
+#habilidades{
+  font-size: 18px;
 }
 
 /* Para quitar los puntos a los items de listas */
@@ -258,6 +441,8 @@ main {
 /*
  CSS for the main interaction
 */
+
+
 .tabset > input[type="radio"] {
   position: absolute;
   left: -200vw;
@@ -280,12 +465,12 @@ main {
   position: relative;
   display: inline-block;
   padding: 15px 15px 25px;
-  border: 1px solid transparent;
+  border: 100px solid transparent;
   border-bottom: 0;
   cursor: pointer;
   font-weight: 600;
   font-size: 13px;
-    font-family: 'Kaushan Script', cursive;
+   
 
     background-color: var(--tabs-dark-color);
     padding: 10px;
@@ -305,7 +490,7 @@ main {
 }
 
 input:focus-visible + label {
-  outline: 2px solid rgba(0,102,204,1);
+  outline: 2px solid rgb(157, 119, 192);
   border-radius: 3px;
 }
 
@@ -322,8 +507,8 @@ input:focus-visible + label {
 } */
 
 .tabset > input:checked + label {
-  border-color: #ccc;
-  border-bottom: 1px solid #fff;
+  border-color: rgb(77, 154, 231);
+ /* border-bottom: 1px solid #fff; */
   margin-bottom: -1px;
   
 }
@@ -339,4 +524,14 @@ input:focus-visible + label {
   padding: 20px;
   border: var(--tabs-border-size) solid var(--tabs-border-color);
   border-radius: 0 0 10px 10px;
+}
+
+ol.listica{
+  border: solid #ffffff;
+  padding: 10%;
+  border-radius: 15px;
+  margin: 0 5% 0 5%;
+  display: grid;
+  justify-content: center;
+  font-size: 16px;
 }
