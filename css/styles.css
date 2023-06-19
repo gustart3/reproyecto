@@ -318,7 +318,7 @@ li.lista1::before{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/mail.png);
+  background-image: url(img/mail.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -471,15 +471,7 @@ main {
     border-bottom: 0;
 }
 
-.tabset > label::after {
-  /* content: "";
-  position: absolute;
-  left: 15px;
-  bottom: 10px;
-  width: 22px;
-  height: 4px;
-  background: #8d8d8d; */
-}
+
 
 input:focus-visible + label {
   outline: 2px solid rgb(157, 119, 192);
