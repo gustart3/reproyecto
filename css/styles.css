@@ -34,7 +34,7 @@ perspective: 500px;
 .gus1{
   width: 100px;
   height:100px;
-  background: url(/img/yo.jpg);
+  background: url(img/yo.jpg);
   border-radius: 50px;
   background-position: center;
   background-size: cover;
@@ -318,7 +318,7 @@ li.lista1::before{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/mail.png);
+  background-image: url(img/mail.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -335,7 +335,7 @@ li.lista2::before{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/linkedin.png);
+  background-image: url(img/linkedin.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -346,7 +346,7 @@ li.lista3::before{
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/github.png);
+  background-image: url(img/github.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
