@@ -1,0 +1,152 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Kaushan+Script&family=Loved+by+the+King&display=swap');
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+    list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header{
+    font-family: 'Bagel Fat One', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px 10px 10px;
+    background-color:rgb(43, 226, 226);
+    border-radius: 0 0 20px 20px;
+  
+}
+body{
+    font-family: 'Kaushan Script', cursive;
+  font-size: 16px;
+  line-height: 1;
+  margin: 0 50px 0 50px;
+  text-align: center;
+}
+
+.logo01{
+    width: 100px;
+    border-radius: 50px;
+    padding: 18px;
+}
+.logo{
+    margin-top: 10px;
+    width:60px;
+    padding: 10px;
+    transition: all 300ms;
+}
+.logo:hover{
+    transform: translateY(-20px);
+    transition: all 300ms;
+
+}
+.yo{
+    width: 150px;  
+    border-radius: 75px;
+}
+
+.gif-menu{
+    width: 25px;
+    display: block;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+
+#contacto{
+    background-color:rgb(43, 226, 226);
+    border-radius: 20px;
+    padding: 20px;}
+
+.gif-menu{ display:flex;  
+}
+
+.enlace{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(114, 100, 126);
+    border:solid;
+    border-color: aqua;
+    border-width: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+
+  footer{
+    background-color:rgb(43, 226, 226);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    border-radius: 20px 20px 0 0 ;
+}
+.cv{
+    padding: 10px;
+    border-radius:15px;
+    background-color:rgb(43, 226, 226);
+    border-width: 0px;
+}
+
+  .tab:target ~ .tab:last-of-type>a {
+    background-color: var(--tabs-dark-color); 
+    z-index: 0; 
+  }
+
+ .tabset > input[type="radio"] {
+    position: absolute;
+    left: -200vw;
+    
+  }
+  /*esto controla las visivilidad de las pesstañas*/
+ .tabset .tab-panel {
+    display: none
+    
+  } 
+  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(5)
+   {
+    display:inline-block;
+  }
+  /*esto controla el aspecto del contenido de las pestañas*/
+  .tabset > label {
+    position: relative;
+    display: inline-block;
+    margin-left: 3%;
+    border: 50px solid transparent;
+    border-bottom: 0;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 24px;
+    background-color: var(--tabs-dark-color);
+    padding: 2px;
+    border: var(--tabs-border-size) solid var(--tabs-border-color);
+    border-radius: 10px 10px 0 0;
+    border-bottom: 0;
+  }
+  
