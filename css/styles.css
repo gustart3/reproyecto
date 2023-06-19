@@ -23,7 +23,7 @@ body{
 }
 .container{
 height: 10px;
-height: 50vw;
+height: 120px;
 display: flex;
 justify-content: first baseline;
 align-items: flex-end;
@@ -149,7 +149,7 @@ perspective: 500px;
 
 .tabset{
   display:block;
-margin: -20% 5% 0 5%;
+margin: 0 5% 0 5%;
 
 }
 
