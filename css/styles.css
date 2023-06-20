@@ -30,14 +30,13 @@ align-items: flex-end;
 flex-direction: column;
 perspective: 500px;
 }
-
-.gus1{
+.mini{
   width: 100px;
   height:100px;
-  background: url(/img/yo.jpg);
+  /*background: url(/img/yo.jpg);*/
   border-radius: 50px;
-  background-position: center;
-  background-size: cover;
+ /* background-position: center;*/
+  /*background-size: cover;*/
   position: absolute;
   filter: drop-shadow(0px 7px 21px rgb(30, 166, 211));
   animation: rotar 3s linear infinite;
@@ -46,6 +45,7 @@ perspective: 500px;
   left: 5px;
 
 }
+
 
 .gus1:hover{
   cursor: pointer;
@@ -143,10 +143,6 @@ perspective: 500px;
   }
 }
 
-
-
-
-
 .tabset{
   display:block;
 margin: 0 5% 0 5%;
@@ -167,8 +163,6 @@ h1{
 #logo{
     display: flex;
 }
-
-
 
 img.perfil{
     border-radius: 100px;
@@ -313,57 +307,29 @@ button{
   font-size: medium; 
 
 }
-li.lista1::before{
+.lista1{
   content: "";
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url(/img/mail.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-top: 20px;
-}
-.lista3:hover{
-  transform: scale(1.2);
+  animation: jump 1s linear infinite;
   transition: all 300ms;
-  cursor: pointer;
+  margin-right: 10px;
 }
 
-li.lista2::before{
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url(/img/linkedin.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 20px;
-}
-li.lista3::before{
-  content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url(/img/github.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-top: 20px;
+@keyframes jump{
+  from{
+    transform: translateY(5px); 
+  }
+   to{
+    transform: translateY(0px);
+   }
 }
 
-/*
-img.pequeña{
-    width: 10%x;
-    margin: 5%;
-    border-radius: 15px;
-}
-img.mediana{
-    width: 400px;
-    border-radius: 15px;
-    margin: 5%;
-}*/
 #fotos{
   display:grid;
   grid-template-columns: repeat(5, 1fr);
@@ -410,25 +376,6 @@ main {
     max-width: 1200px;
     margin: auto;
 }
-
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
-
 
 /*
  CSS for the main interaction
@@ -484,11 +431,7 @@ input:focus-visible + label {
   background-color: var(--tabs-lite-color);
 }
 
-/* .tabset > label:hover::after,
-.tabset > input:focus + label::after,
-.tabset > input:checked + label::after {
-  background-color: var(--tabs-lite-color);
-} */
+
 
 .tabset > input:checked + label {
   border-color: rgb(77, 154, 231);
