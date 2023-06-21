@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Kaushan+Script&family=Loved+by+the+King&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,40 +6,42 @@
     scroll-behavior: smooth;
 }
 header{
-    font-family: 'Bagel Fat One', cursive;
-    display: flex;
-    justify-content: center;
-    align-items: flex-en;
-
-    margin-top: 5px;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position:fixed;
+  width:100%;
+  z-index: 1;
 }
+
 body{ 
-  font-family: 'Kaushan Script', cursive;
-  font-size: 16px;
-  line-height: 1;
-
-
-
+  font-family: 'Lato', sans-serif;
+  background-color: #fbfbfb;
+  font-size: 18px;
+  line-height: 1.2;
 }
+
+
 .container{
 height: 10px;
-height: 120px;
-display: flex;
-justify-content: first baseline;
+height: 90px;
+width: max-content;
+/*justify-content: first baseline;
 align-items: flex-end;
-flex-direction: column;
+flex-direction: column;*/
 perspective: 500px;
 }
 .mini{
-  width: 100px;
-  height:100px;
-  border-radius: 50px;
+  width: 80px;
+  height:80px;
+  border-radius: 40px;
   position: absolute;
   filter: drop-shadow(0px 7px 21px rgb(30, 166, 211));
   animation: rotar 3s linear infinite;
   margin-top: 0;
   margin-bottom: 0px;
-  left: 5px;
+ 
 }
 
 
@@ -138,10 +140,11 @@ perspective: 500px;
     transform: rotateY(360deg);
   }
 }
-
+/*maneja el contenido de las pestañas en lo visual*/
 .tabset{
   display:block;
 margin: 0 5% 0 5%;
+padding-top: 90px;
 
 }
 
@@ -152,6 +155,7 @@ margin: 0 5% 0 5%;
 }
 
 h1{
+  font-size: 36px;
    margin-left: 30%;
 }
 
@@ -174,7 +178,7 @@ img.perfil:hover{
 
 }
 section{
-    font-size: 28px;
+    font-size: 18px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -192,11 +196,13 @@ section{
  
 
 p{
-    font-size: 20px; 
+    font-size: 18px; 
     text-align: justify; 
 }
 
 footer{
+  background-color: #af599e;
+  color: #fbfbfb;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -204,12 +210,12 @@ footer{
     margin-top: 10%;
 }
 button{
-    background-color: #a5cef3;
+    background-color: #af599e;
+    color: #fbfbfb;
     border: solid #564fb1;
     border-radius: 15px;
     padding: 8px;
-    font-family: 'Kaushan Script', cursive;
-    font-size: medium;
+    font-size: 20px;
     margin: 10px;   
 }
 .cv{
@@ -229,15 +235,16 @@ button{
   :root {
     --tabs-border-color: #ABCDEF;
     --tabs-border-size: 3px;
-    --tabs-text-color: #000000;
-    --tabs-dark-color: #ac6099;
-    --tabs-lite-color: #a5cef3;
+    --tabs-text-color: #0f0f0f;
+    --tabs-dark-color: rgba(87, 46, 78, 0.3);
+    --tabs-lite-color: rgba(175, 89, 158, 0.3);
     --tabs-width: 120px;
     --tabs-height: 40px;
 
   }
  
   h2, p {
+    font-size: 28px;
     margin: 0;
   } 
   a {
@@ -272,7 +279,7 @@ button{
   .tabs { 
     padding: 10px;
     color: var(--tabs-text-color);
-    font-size: 24PX;
+    
 
   }
   .tab-content {
@@ -350,9 +357,6 @@ button{
  
 }
 
-#habilidades{
-  font-size: 18px;
-}
 
 /* Para quitar los puntos a los items de listas */
 ul {
@@ -395,7 +399,7 @@ main {
 .tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
   display: block;
 }
-
+/*contenido de las pestañas*/
 .tabset > label {
   position: relative;
   display: inline-block;
@@ -404,7 +408,7 @@ main {
   border-bottom: 0;
   cursor: pointer;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
    
 
     background-color: var(--tabs-dark-color);
@@ -446,15 +450,15 @@ input:focus-visible + label {
   background-color: var(--tabs-lite-color);
   padding: 20px;
   border: var(--tabs-border-size) solid var(--tabs-border-color);
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 10px 10px 10px;
 }
 
 ol.listica{
   border: solid #ffffff;
-  padding: 10%;
+  padding: 5%;
   border-radius: 15px;
-  margin: 0 5% 0 5%;
+  margin: 0 15px 0 15px;
+
   display: grid;
   justify-content: center;
-  font-size: 16px;
 }
