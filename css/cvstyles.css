@@ -8,6 +8,17 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+h1{
+    font-size: 36px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+#inicio{
+    margin-bottom: 300px;
+}
 
 /* Para quitar los puntos a los items de listas */
 ul {
@@ -30,22 +41,38 @@ main {
 
 header{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position:fixed;
   width:100%;
-  margin-left: -50px;
   z-index: 1;
   padding: 1px 10px 10px 10px;
-  background-color:rgb(43, 226, 226);
-  
+  background-color:#fbfbfb;
+  filter: drop-shadow(0px 7px 21px rgb(37, 37, 37));
+  margin-left: -50px;
 }
+
+#menu{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;    
+}
+
+a{
+    margin:0 20px 20px 0;
+}
+
+
 body{
-    font-family: 'Kaushan Script', cursive;
-  font-size: 16px;
-  line-height: 1;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
   margin:0 50px 0 50px;
   text-align: center;
+  background-color:#fbfbfb;
+  color: #0f0f0f;
+  min-height: 100vh;
 }
 
 .logo01{
@@ -53,7 +80,18 @@ body{
     border-radius: 40px;
     padding: 18px;
     transition: all 300ms;
+    filter: drop-shadow(0px 7px 21px rgb(23, 24, 24));
+    animation: rotar 3s linear infinite;
 }
+
+@keyframes rotar{
+    from{
+      transform: rotateY(360deg); 
+    }
+     to{
+      transform: rotateY('-180deg');
+     }
+  }
 
 .logo01:hover{
     transform: scale(1.2);
@@ -71,8 +109,9 @@ body{
 
 }
 .yo{
-    width: 150px;  
-    border-radius: 75px;
+    width: 400px;  
+    width: 80vw;
+    border-radius: 40vw;
 }
 
 .gif-menu{
@@ -87,7 +126,7 @@ figure{
 
 
 #contacto{
-    background-color:rgb(43, 226, 226);
+    background-color:rgba(175, 89, 158, 0.3);
     border-radius: 20px;
     padding: 20px;}
 
@@ -97,16 +136,18 @@ figure{
 .enlace{
     padding: 10px;
     border-radius: 20px;
-    background-color: rgb(114, 100, 126);
+    background-color:#af599e;
+    color: #fbfbfb;
     border:solid;
-    border-color: aqua;
+    border-color: rgba(175, 89, 158, 0.3);
     border-width: 2px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+   
     
   }
 
   footer{
-    background-color:rgb(43, 226, 226);
+    background-color:#af599e;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -114,10 +155,11 @@ figure{
     border-radius: 20px 20px 0 0 ;
 }
 .cv{
-    padding: 10px;
+    padding: 15px;
     border-radius:15px;
-    background-color:rgb(43, 226, 226);
+    background-color:#af599e;
     border-width: 0px;
+    font-size: 20px;
 }
 
   .tab:target ~ .tab:last-of-type>a {
@@ -145,7 +187,7 @@ figure{
   .tabset > label {
     position: relative;
     display: inline-block;
-    margin-left: 3%;
+    margin-left: 2%;
     border: 50px solid transparent;
     border-bottom: 0;
     cursor: pointer;

@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
-* {
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Kaushan+Script&family=Loved+by+the+King&display=swap');* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
 header{
-  background-color: #fbfbfb;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position:fixed;
-  width:100%;
+  width:100vw;
   z-index: 1;
+  height: 90px;
+  background-color: #070606;
+  
 }
 
 body{ 
@@ -24,7 +25,6 @@ body{
 
 
 .container{
-height: 10px;
 height: 90px;
 width: max-content;
 /*justify-content: first baseline;
@@ -409,13 +409,11 @@ main {
   cursor: pointer;
   font-weight: 600;
   font-size: 18px;
-   
-
-    background-color: var(--tabs-dark-color);
+      background-color: var(--tabs-dark-color);
     padding: 10px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-radius: 10px 10px 0 0;
-    border-bottom: 0;
+  
 }
 
 
@@ -436,7 +434,7 @@ input:focus-visible + label {
 .tabset > input:checked + label {
   border-color: rgb(77, 154, 231);
  /* border-bottom: 1px solid #fff; */
-  margin-bottom: -1px;
+  margin-bottom: 0;
   
 }
 
