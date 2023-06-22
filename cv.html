@@ -11,13 +11,9 @@
 <body> 
 <section id="hogar"></section>
 <header>
-   <a href="index.html"><img class="logo01" src="img/Screenshot_20230218-101732-521.png"></a>     
-    <nav class="barra">
-        <ul id="menu">
-            <li> <a href="#inicio"> Inicio</a></li>
-            <li> <a href="#contacto"> Contacto</a></li>
-        </ul>
-    </nav>
+    <a href="index.html"><img class="logo01" src="img/Screenshot_20230218-101732-521.png"></a>     
+    <a href="#inicio"> Inicio</a>
+    <a href="#contacto"> Contacto</a>
 </header>
 
 <br>
@@ -58,16 +54,21 @@
             <div class="tabset">
     
                 <!-- Tab 1 -->
-            <input type="radio" name="tabset" id="gtab1" aria-controls="email" checked>
-            <label for="gtab1"><img class="logo" src="img/mail.png" alt="email"></label>
+            <input type="radio" name="tabset" id="gtab1" aria-controls="empty" checked>
+            <label for="gtab4"><!--<img class="logo" src="img/mail.png" alt="email">--></label>
             <!-- Tab 2 -->
-            <input type="radio" name="tabset" id="gtab2" aria-controls="instagram">
-            <label for="gtab2"><img class="logo" src="img/linkedin.png" alt="instagram"></label>
+            <input type="radio" name="tabset" id="gtab2" aria-controls="email" >
+            <label for="gtab2"><img class="logo" src="img/mail.png" alt="email"></label>
             <!-- Tab 3 -->
-            <input type="radio" name="tabset" id="gtab3" aria-controls="github">
-            <label for="gtab3"><img class="logo" src="img/github.png" alt="github"></label>
+            <input type="radio" name="tabset" id="gtab3" aria-controls="instagram">
+            <label for="gtab3"><img class="logo" src="img/linkedin.png" alt="instagram"></label>
+            <!-- Tab 4 -->
+            <input type="radio" name="tabset" id="gtab4" aria-controls="github">
+            <label for="gtab4"><img class="logo" src="img/github.png" alt="github"></label>
       
       <div class="tab-panels">
+        <section id="empty" class="tab-panel"></section>
+
         <section id="email" class="tab-panel">      
       <h3>No dudes en escribirme!!</h3>
       <br>
@@ -75,15 +76,15 @@
        <br>
       <p><a href=mailto:gapa1509@gmail.com><button class="enlace">¡Da clic aquí para enviarnme un correo!</button></a></p>
     </section>
-    <br>
+    <!--<br>-->
         <section id="instagram" class="tab-panel">
             <h3>Visita mi perfil de instragram</h3>
             <br>
             <p>para conocer un poco de mis trabajos, mis pasiones, mis hobbbies y mis habilidades</p>
             <br>
-            <strong>instagram:</strong>  <button class="enlace"> <a href="https://instagram.com/gust_art3?igshid=OTk0YzhjMDVlZA==" target="_blank">@gust_art3</a></button>
+            <button class="enlace"> <a href="https://instagram.com/gust_art3?igshid=OTk0YzhjMDVlZA==" target="_blank">@gust_art3</a></button>
         </section>
-        <br>
+       <!--<br>-->
         <section id="github" class="tab-panel">
             <h3>Visita mi página de github</h3>
             <br>

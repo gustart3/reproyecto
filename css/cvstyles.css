@@ -41,7 +41,7 @@ main {
 
 header{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   position:fixed;
   width:100%;
@@ -109,9 +109,9 @@ body{
 
 }
 .yo{
-    width: 400px;  
-    width: 80vw;
-    border-radius: 40vw;
+    width: 100%;  
+    max-width: 400px;
+    border-radius: 50%;
 }
 
 .gif-menu{
@@ -177,26 +177,26 @@ figure{
     display: none
     
   } 
-  .tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(3),
-  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(5)
+  .tabset > input:first-child:checked~ .tab-panels > .tab-panel:first-child,
+  .tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+  .tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+  .tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4)
    {
     display:inline-block;
+    justify-content: space-between;
   }
   /*esto controla el aspecto del contenido de las pestañas*/
   .tabset > label {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
-    margin-left: 2%;
+    justify-content: space-around;
+    margin-left: 1%;
     border: 50px solid transparent;
     border-bottom: 0;
     cursor: pointer;
-    font-weight: 400;
-    font-size: 24px;
     background-color: var(--tabs-dark-color);
     padding: 2px;
     border: var(--tabs-border-size) solid var(--tabs-border-color);
-    border-radius: 10px 10px 0 0;
     border-bottom: 0;
   }
   
