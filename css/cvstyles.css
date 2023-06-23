@@ -79,7 +79,6 @@ body{
   text-align: center;
   background-color:#fbfbfb;
   color: #0f0f0f;
-  min-height: 100vh;
 }
 
 .logo01{
@@ -139,7 +138,8 @@ figure{
     background-color:rgba(175, 89, 158, 0.3);
     border-radius: 20px;
     padding: 20px;
-    min-height: 100vh;
+    padding-bottom: 30px;
+    
 }
 
 .gif-menu{ display:flex;  
