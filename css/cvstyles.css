@@ -191,5 +191,7 @@ figure{
     border: var(--tabs-border-size) solid var(--tabs-border-color);
     border-bottom: 0;
   }
-  
+  p{
+    margin: 20px;
+  }
  
